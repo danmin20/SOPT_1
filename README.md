@@ -5,7 +5,7 @@ SOPT android part 1차 세미나 과제
 <div>
 <img width="250" src="https://user-images.githubusercontent.com/50590192/79749678-9642cc00-834a-11ea-84dd-426d07b7e1c1.png">
 <img width="250" src="https://user-images.githubusercontent.com/50590192/79749714-a3f85180-834a-11ea-8121-13ad31b23f51.png">
-<img width="250" src="https://user-images.githubusercontent.com/50590192/79749755-b5d9f480-834a-11ea-9f01-a31f1617df85.png">
+<img width="250" src="https://user-images.githubusercontent.com/50590192/79751528-b2943800-834d-11ea-9cd7-733c0940c901.png">
 </div>
 
 ## Learned Points
