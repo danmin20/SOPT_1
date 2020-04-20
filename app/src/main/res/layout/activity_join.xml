@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/join_logo"
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginTop="120dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/join_email"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginStart="60dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/join_pw"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
@@ -47,44 +47,44 @@
         android:hint="비밀번호"
         android:inputType="textPassword"
         android:paddingHorizontal="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/join_email"
+        app:layout_constraintStart_toStartOf="@+id/join_email"
+        app:layout_constraintTop_toBottomOf="@+id/join_email" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/join_btn"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/button_background"
-        android:text="로그인"
+        android:text="가입완료"
         android:textColor="@color/colorWhite"
-        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="@+id/join_github"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText4"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintStart_toStartOf="@+id/join_github"
+        app:layout_constraintTop_toBottomOf="@+id/join_github" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/join_ask"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="이미 회원이신가요?"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/gotoLogin"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/join_btn"
+        app:layout_constraintTop_toBottomOf="@+id/join_btn" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/gotoLogin"
         android:layout_width="82dp"
         android:layout_height="0dp"
         android:text="로그인하기"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/join_ask"
+        app:layout_constraintEnd_toEndOf="@+id/join_btn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/join_ask"
+        app:layout_constraintTop_toTopOf="@+id/join_ask" />
 
     <TextView
         android:id="@+id/textView5"
@@ -93,12 +93,12 @@
         android:textSize="23dp"
         android:text="회원가입"
         android:textColor="@color/colorBlue"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/join_logo"
+        app:layout_constraintStart_toStartOf="@+id/join_logo"
+        app:layout_constraintTop_toBottomOf="@+id/join_logo" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/join_check_pw"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
@@ -107,12 +107,12 @@
         android:paddingHorizontal="15dp"
         android:background="@drawable/text_background"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintEnd_toEndOf="@+id/join_pw"
+        app:layout_constraintStart_toStartOf="@+id/join_pw"
+        app:layout_constraintTop_toBottomOf="@+id/join_pw" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/join_github"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
@@ -121,8 +121,8 @@
         android:inputType="textPersonName"
         android:paddingHorizontal="15dp"
         android:hint="GitHub 닉네임"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintEnd_toEndOf="@+id/join_check_pw"
+        app:layout_constraintStart_toStartOf="@+id/join_check_pw"
+        app:layout_constraintTop_toBottomOf="@+id/join_check_pw" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
