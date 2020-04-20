@@ -4,9 +4,9 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_join.*
-import kotlinx.android.synthetic.main.activity_login.*
 
 class JoinActivity : AppCompatActivity() {
 
@@ -20,7 +20,7 @@ class JoinActivity : AppCompatActivity() {
             } else if (join_check_pw.text.toString() != join_pw.text.toString()) {
                 Toast.makeText(this, "비밀번호가 일치하지 않습니다", Toast.LENGTH_SHORT).show()
             } else {
-                val intent = Intent(this, LoginActivity::class.java)
+                val intent = Intent()
                 intent.putExtra("email", join_email.text.toString())
                 intent.putExtra("password", join_pw.text.toString())
                 setResult(Activity.RESULT_OK, intent)
